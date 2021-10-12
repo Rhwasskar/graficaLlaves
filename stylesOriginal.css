@@ -1,0 +1,74 @@
+/*
+ *  Flex Layout Specifics
+*/
+body{
+background-color: black;
+}
+span{
+    display:flex;
+    flex-direction:row;
+  }
+  .round{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:200px;
+    list-style:none;
+    padding:0;
+  }
+    .round .spacer{ flex-grow:1; }
+    .round .spacer:first-child,
+    .round .spacer:last-child{ flex-grow:.5; }
+  
+    .round .game-spacer{
+      flex-grow:1;
+    }
+  
+  /*
+   *  General Styles
+  */
+  body{
+    font-family:sans-serif;
+    font-size:small;
+    padding:10px;
+    line-height:1.4em;
+    background-color: black
+  }
+  
+  li.game{
+    padding-left:20px;
+  }
+  
+    li.game.winner{
+      font-weight:bold;
+    }
+    li.game span{
+      float:right;
+      margin-right:5px;
+    }
+  
+    li.game-top{ border-bottom:2px solid rgb(255, 255, 255); }
+  
+    li.game-spacer{ 
+      border-right:2px solid rgb(255, 255, 255);
+      min-height:40px;
+    }
+  
+    li.game-bottom{ 
+      border-top:2px solid rgb(255, 255, 255);
+    }
+
+div.jumbotron{
+  background-color: grey; 
+  padding-top: 5px;
+
+  }
+span.titulo-llave{
+  display:flex;
+  flex-direction:row;
+}
+.div-llave{
+  background-color:rgb(252, 198, 81);
+  border-radius: 2%;
+}
+

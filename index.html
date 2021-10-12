@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OrdenameLasLlaves</title>
+    <link rel="stylesheet" href="stylesOriginal.css"> <!-- Hoja de estilos del Bracket-->
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: black">
+    <div id='tournament' class="container-fluid bg-dark">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Llaves</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Entidades</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Escuelas</a>
+                        <a class="dropdown-item" href="#">Instructores</a>
+                        <a class="dropdown-item" href="#">Categorías</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Archivos de configuración</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id='botonLibres' href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Open Kids 2019 - Todos los derechos reservados</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="jumbotron" id="contenido">
+           
+            <nav>
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-Inf-tab" data-toggle="pill" href="#Inf" onclick="miEleccion='Inf'" role="tab"
+                            aria-controls="Inf" aria-selected="true">Infantil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Cad-tab" data-toggle="pill" href="#Cad" role="tab"
+                            aria-controls="Cad" aria-selected="false">Cadete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Juv-tab" data-toggle="pill" href="#Juv" role="tab"
+                            aria-controls="Juv" aria-selected="false">Juvenil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Sen-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">Senior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Pre-tab" data-toggle="pill" href="#Pre" role="tab"
+                            aria-controls="Pre" aria-selected="true">Pre-Competitivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">Formas</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade text-light" id="Inf" role="tabpanel" aria-labelledby="pills-Inf-tab"> soy un Listado de Infantiles
+                    </div>
+                    <div class="tab-pane fade text-light" id="Cad" role="tabpanel" aria-labelledby="pills-Cad-tab">soy un Listado de Cadetes</div>
+                    <div class="tab-pane fade text-light" id="Juv" role="tabpanel" aria-labelledby="pills-Juv-tab">soy un Listado de Juveniles </div>
+                    <div class="tab-pane fade text-light" id="Pre" role="tabpanel" aria-labelledby="pills-Pre-tab">Listado de Precompetitivos </div>
+                </div>
+            </nav>
+            <div class="jumbotron" id="principal">
+
+                </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="armador.js"></script>
+</body>
+
+</html>
